@@ -9,9 +9,9 @@ import utilities.ExcelData;
 
 public class DiagnosticTest extends BaseTestClass {
 
-	@Test(groups={"smoke"})
+	@Test(groups={"Regression"})
 	public void topCitiesTest() throws Exception {
-		System.out.println("Smoke Test");
+		System.out.println("Regression Test");
 		logger = report.createTest("Getting name of top cities from Diagnostics");
 		LandingPage landingPage = invokeLandingPage();
 		DiagnosticsPage diagnosticsPage = landingPage.goToDiagnosticPage();
