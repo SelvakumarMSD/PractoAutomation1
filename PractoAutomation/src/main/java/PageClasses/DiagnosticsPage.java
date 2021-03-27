@@ -16,20 +16,18 @@ public class DiagnosticsPage extends PageBaseClass {
 		super(driver, logger);
 		// TODO Auto-generated constructor stub
 	}
-	
-	@FindBy(xpath="//li[@class='u-text--center']/div[2]")
+
+	@FindBy(xpath = "//li[@class='u-text--center']/div[2]")
 	List<WebElement> topCities;
-	
+
 	public String[] getTopCities() {
-		
+
 		String[] cities = new String[topCities.size()];
-		for(int i=0;i<topCities.size();i++) {
-			cities[i]=topCities.get(i).getText();
-		
-			
+		for (int i = 0; i < topCities.size(); i++) {
+			cities[i] = topCities.get(i).getText();
+
 		}
 		return cities;
 	}
-	 
 
 }

@@ -9,16 +9,16 @@ import utilities.ExcelData;
 
 public class DiagnosticTest extends BaseTestClass {
 
-	@Test(groups={"Regression"})
+	@Test(groups = { "Regression" })
 	public void topCitiesTest() throws Exception {
 		System.out.println("Regression Test");
 		logger = report.createTest("Getting name of top cities from Diagnostics");
 		LandingPage landingPage = invokeLandingPage();
 		DiagnosticsPage diagnosticsPage = landingPage.goToDiagnosticPage();
 		String[] topCities = diagnosticsPage.getTopCities();
-		for(String temp:topCities)
+		for (String temp : topCities)
 			System.out.println(temp);
-		ExcelData.writeExcel(topCities,"topCities");
+		ExcelData.writeExcel(topCities, "topCities");
 		diagnosticsPage.takeScreenShotOnFailure();
 		flushReports();
 	}

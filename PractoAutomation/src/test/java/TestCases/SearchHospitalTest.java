@@ -7,13 +7,11 @@ import PageClasses.SearchPage;
 import baseClasses.BaseTestClass;
 import utilities.ExcelData;
 
-public class SearchHospitalTest extends BaseTestClass 
-{
+public class SearchHospitalTest extends BaseTestClass {
 	String[] context = new String[2];
-	
-	@Test(groups={"smoke"})
-	public void getHospitalsNmaes() throws Exception 
-	{
+
+	@Test(groups = { "smoke" })
+	public void getHospitalsNmaes() throws Exception {
 		System.out.println("Smoke Test");
 		logger = report.createTest("Getting Hospitals name :");
 		LandingPage landingPage = invokeLandingPage();
@@ -26,13 +24,13 @@ public class SearchHospitalTest extends BaseTestClass
 		searchPage.scrollDown();
 		waitLoad(5);
 		searchPage.takeScreenShotOnFailure();
-		
+
 		String[] hospitalList = searchPage.getHospitalList();
-		for(String temp:hospitalList)
+		for (String temp : hospitalList)
 			System.out.println(temp);
-		ExcelData.writeExcel(hospitalList,"hospitalList");
+		ExcelData.writeExcel(hospitalList, "hospitalList");
 		flushReports();
-		
+
 	}
 
 }

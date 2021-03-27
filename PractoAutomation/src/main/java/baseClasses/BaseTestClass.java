@@ -31,27 +31,31 @@ public class BaseTestClass {
 	public ExtentReports report = ExtentReportManager.getReportInstance();
 	public ExtentTest logger;
 	public static String nodeurl = "http://192.168.1.9:4444/wd/hub";
+
 	/****************** Invoke Browser ***********************/
 	public void invokeBrowser(String browserName) {
 
 		try {
 
 			if (browserName.equalsIgnoreCase("IE")) {
-				
-				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\drivers\\IEDriverServer.exe");
-				driver=new InternetExplorerDriver();
-				
+
+				System.setProperty("webdriver.ie.driver",
+						System.getProperty("user.dir") + "\\drivers\\IEDriverServer.exe");
+				driver = new InternetExplorerDriver();
+
 			} else if (browserName.equalsIgnoreCase("Mozilla")) {
-				
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
+
+				System.setProperty("webdriver.gecko.driver",
+						System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
-			}  else if (browserName.equalsIgnoreCase("Opera"))
-				
+			} else if (browserName.equalsIgnoreCase("Opera"))
+
 			{
-				System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") + "\\drivers\\operadriver.exe");
+				System.setProperty("webdriver.opera.driver",
+						System.getProperty("user.dir") + "\\drivers\\operadriver.exe");
 				driver = new OperaDriver();
 			}
-		
+
 		} catch (Exception e) {
 			// reportFail(e.getMessage());
 			System.out.println(e.getMessage());
@@ -67,14 +71,10 @@ public class BaseTestClass {
 
 	@AfterMethod
 	public void flushReports() {
-		
+
 		report.flush();
 		driver.quit();
 	}
-	
-	
-
-
 
 	/***************** Wait Functions in Framework *****************/
 	public void waitForPageLoad() {
@@ -111,12 +111,14 @@ public class BaseTestClass {
 			e.printStackTrace();
 		}
 	}
-	/*********************Hit Enter*************/
+
+	/********************* Hit Enter *************/
 	public void hitEnter() {
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ENTER).build().perform();
 	}
-	/*******************invoke LandingPage***********/
+
+	/******************* invoke LandingPage ***********/
 	public LandingPage invokeLandingPage() {
 		invokeBrowser("Mozilla");
 		PageBaseClass pageBase = new PageBaseClass(driver, logger);

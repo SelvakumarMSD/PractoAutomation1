@@ -15,7 +15,7 @@ public class LogInTest extends BaseTestClass {
 	String[] num = new String[2];
 	String[] num1 = new String[2];
 
-	@Test(groups = {"smoke"})
+	@Test(groups = { "smoke" })
 	public void verifyLogInWithvalidCredentials() throws InterruptedException {
 		System.out.println("Smoke Test");
 		logger = report.createTest("Login practo.com");
@@ -37,7 +37,7 @@ public class LogInTest extends BaseTestClass {
 
 	}
 
-	@Test(groups = {"smoke"})
+	@Test(groups = { "smoke" })
 	public void verifyLogInWithInvalidCredentials() {
 		System.out.println("Smoke Test");
 		try {

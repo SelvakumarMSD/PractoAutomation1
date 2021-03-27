@@ -11,7 +11,7 @@ import PageClasses.PharmacyPage;
 import baseClasses.BaseTestClass;
 
 public class LowerMenuTest extends BaseTestClass {
-	@Test(groups={"smoke"})
+	@Test(groups = { "smoke" })
 	public void searchfordoctorsTest() {
 		System.out.println("Smoke Test");
 		logger = report.createTest("search for doctor");
@@ -24,7 +24,7 @@ public class LowerMenuTest extends BaseTestClass {
 
 	}
 
-	@Test(groups={"smoke"})
+	@Test(groups = { "smoke" })
 	public void searchforhospitalsTest() {
 		System.out.println("Smoke Test");
 		logger = report.createTest("search for hospitals");
@@ -37,7 +37,7 @@ public class LowerMenuTest extends BaseTestClass {
 
 	}
 
-	@Test(groups={"smoke"})
+	@Test(groups = { "smoke" })
 	public void searchforclinicTest() {
 		System.out.println("Smoke Test");
 		logger = report.createTest("search for clinic");
@@ -50,7 +50,7 @@ public class LowerMenuTest extends BaseTestClass {
 
 	}
 
-	@Test(groups={"smoke"})
+	@Test(groups = { "smoke" })
 	public void BookDiagnosticTest() {
 		System.out.println("Smoke Test");
 		logger = report.createTest("search for BookDiagnosticTest");
@@ -63,7 +63,7 @@ public class LowerMenuTest extends BaseTestClass {
 
 	}
 
-	@Test(groups={"smoke"})
+	@Test(groups = { "smoke" })
 	public void BookfullbodyCheckups() {
 		System.out.println("Smoke Test");
 		logger = report.createTest("search for BookDiagnosticTest");

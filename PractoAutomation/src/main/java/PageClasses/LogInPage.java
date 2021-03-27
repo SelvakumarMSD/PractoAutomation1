@@ -10,8 +10,7 @@ import com.aventstack.extentreports.Status;
 
 import baseClasses.PageBaseClass;
 
-public class LogInPage extends PageBaseClass
-{
+public class LogInPage extends PageBaseClass {
 
 	public LogInPage(WebDriver driver, ExtentTest logger) {
 		super(driver, logger);
@@ -20,66 +19,56 @@ public class LogInPage extends PageBaseClass
 
 	@FindBy(xpath = "//*[@id=\"username\"]")
 	WebElement userId;
-	
-	public void enterUserId(String username) 
-	{
+
+	public void enterUserId(String username) {
 		logger.log(Status.INFO, "Entering username");
 		userId.sendKeys(username);
 		logger.log(Status.PASS, "Entered username");
-		
+
 	}
-	
+
 	@FindBy(xpath = "//*[@id=\"password\"]")
 	WebElement pwd;
-	
-	public void enterPassword(String password)
-	{
+
+	public void enterPassword(String password) {
 		logger.log(Status.INFO, "Entering password");
 		pwd.sendKeys(password);
 		logger.log(Status.PASS, "Entered password");
-		
+
 	}
-	
+
 	@FindBy(xpath = "//*[@id=\"login\"]")
 	WebElement loginBtn;
-	
-	public LandingPage clickLogInBtn()
-	{
-		
+
+	public LandingPage clickLogInBtn() {
+
 		loginBtn.click();
 		logger.log(Status.PASS, "clicked login button");
-		LandingPage landingPage = new LandingPage(driver,logger);
+		LandingPage landingPage = new LandingPage(driver, logger);
 		PageFactory.initElements(driver, landingPage);
 		return landingPage;
-		
+
 	}
+
 	/****************** Do LogIn ***********************/
-	public LandingPage doLogIn(String username,String password,LogInPage logInPage) 
-	{
-		
-			logInPage.enterUserId(username);
-			logInPage.enterPassword(password);
-			return logInPage.clickLogInBtn();
-		
-		}
-		
-		
+	public LandingPage doLogIn(String username, String password, LogInPage logInPage) {
+
+		logInPage.enterUserId(username);
+		logInPage.enterPassword(password);
+		return logInPage.clickLogInBtn();
 
 	}
-	
-	/*@FindBy(xpath = "//*[@id=\"facebookbtn\"]")
-	WebElement loginWithFb;
-	
-	public LandingPage clickLogInBtnWithFb()
-	{
-		
-		loginWithFb.click();
-		logger.log(Status.PASS, "clicked login button");
-		LandingPage landingPage = new LandingPage(driver,logger);
-		PageFactory.initElements(driver, landingPage);
-		return landingPage;
-		
-	}*/
 
-	
+}
 
+/*
+ * @FindBy(xpath = "//*[@id=\"facebookbtn\"]") WebElement loginWithFb;
+ * 
+ * public LandingPage clickLogInBtnWithFb() {
+ * 
+ * loginWithFb.click(); logger.log(Status.PASS, "clicked login button");
+ * LandingPage landingPage = new LandingPage(driver,logger);
+ * PageFactory.initElements(driver, landingPage); return landingPage;
+ * 
+ * }
+ */

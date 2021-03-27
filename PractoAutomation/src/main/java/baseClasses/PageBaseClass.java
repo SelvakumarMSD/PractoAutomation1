@@ -154,7 +154,7 @@ public class PageBaseClass extends BaseTestClass {
 	/****************** Scroll Down ************************/
 	public void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("window.scrollBy(0,2000)");
 	}
 
 	@FindBy(xpath = "//*[@id=\'root\']/div/div/div[1]/div[1]/div[2]/div/div[1]/span/a/i")

@@ -8,20 +8,22 @@ import PageClasses.DoctorPage;
 import PageClasses.LandingPage;
 import PageClasses.PharmacyPage;
 import baseClasses.BaseTestClass;
-public class TopMenuTest extends BaseTestClass  {
-	
-	@Test(groups={"smoke"})
+
+public class TopMenuTest extends BaseTestClass {
+
+	@Test(groups = { "smoke" })
 	public void homeButtontest() {
 		System.out.println("Smoke Test");
 		logger = report.createTest("Click on practo icon");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage = landingPage.goToHomePage();
-		landingPage.getTitle("Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests");
+		landingPage.getTitle(
+				"Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests");
 		landingPage.takeScreenShotOnFailure();
 		flushReports();
 	}
-	
-	@Test(groups="regression")
+
+	@Test(groups = "regression")
 	public void doctorsButtontest() {
 		System.out.println("Regression Test");
 		logger = report.createTest("Click on Doctor icon");
@@ -32,7 +34,7 @@ public class TopMenuTest extends BaseTestClass  {
 		flushReports();
 	}
 
-	@Test(groups="regression")
+	@Test(groups = "regression")
 	public void consultButtontest() {
 		System.out.println("Regression Test");
 		logger = report.createTest("Click on consult icon");
@@ -42,18 +44,20 @@ public class TopMenuTest extends BaseTestClass  {
 		consultPage.takeScreenShotOnFailure();
 		flushReports();
 	}
-	@Test(groups="regression")
+
+	@Test(groups = "regression")
 	public void pharmacyButtontest() {
 		System.out.println("Regression Test");
 		logger = report.createTest("Click on pharmacy icon");
 		LandingPage landingPage = invokeLandingPage();
 		PharmacyPage pharmacyPage = landingPage.goToPharmacyPage();
-		pharmacyPage.getTitle("Buy Medicines,Health Products Online | India's Most Reliable Online Medical Store | Practo");
+		pharmacyPage
+				.getTitle("Buy Medicines,Health Products Online | India's Most Reliable Online Medical Store | Practo");
 		pharmacyPage.takeScreenShotOnFailure();
 		flushReports();
 	}
-	
-	@Test(groups="regression")
+
+	@Test(groups = "regression")
 	public void diagnosticsButtontest() {
 		System.out.println("Regression Test");
 		logger = report.createTest("Click on diagnostics icon");

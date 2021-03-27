@@ -9,6 +9,7 @@
   		<class name="TestCases.SearchHospitalTest"/>
   		<class name="TestCases.DiagnosticTest"/>
   		<class name="TestCases.TopMenuTest"/>
+  		<class name="TestCases.LowerMenuTest" />
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
