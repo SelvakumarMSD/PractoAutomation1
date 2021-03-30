@@ -18,7 +18,7 @@ public class LowerMenuTest extends BaseTestClass {
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
 		PatientSearch patient = landingPage.searchfordoctors();
-		patient.getTitle("Best Doctors In Chennai - Book Appointment Online, View Fees, Recommendations | Practo");
+		patient.getTitle("Best Doctors In Salem - Book Appointment Online, View Fees, Recommendations | Practo");
 		patient.takeScreenShotOnFailure();
 		flushReports();
 
@@ -31,7 +31,7 @@ public class LowerMenuTest extends BaseTestClass {
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
 		PatientSearch hospitalsSearch = landingPage.searchforhospitals();
-		hospitalsSearch.getTitle("Best Hospitals in Chennai - Book Appointment Online, View Fees, Reviews | Practo");
+		hospitalsSearch.getTitle("Best Hospitals in Salem - Book Appointment Online, View Fees, Reviews | Practo");
 		hospitalsSearch.takeScreenShotOnFailure();
 		flushReports();
 
@@ -44,7 +44,7 @@ public class LowerMenuTest extends BaseTestClass {
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
 		PatientSearch clinicSearch = landingPage.searchforclinic();
-		clinicSearch.getTitle("Best Clinics in Chennai - Book Appointment, View Reviews, Address, Timings | Practo");
+		clinicSearch.getTitle("Best Clinics in Salem - Book Appointment, View Reviews, Address, Timings | Practo");
 		clinicSearch.takeScreenShotOnFailure();
 		flushReports();
 

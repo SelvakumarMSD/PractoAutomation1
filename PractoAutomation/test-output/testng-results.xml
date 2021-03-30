@@ -1,24 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17750" started-at="2021-03-27T16:41:30 IST" finished-at="2021-03-27T16:41:48 IST">
+  <suite name="Default suite" duration-ms="185466" started-at="2021-03-30T20:24:23 IST" finished-at="2021-03-30T20:27:29 IST">
     <groups>
       <group name="smoke">
-        <method signature="CorporateWellnessTest.corporateWellnessTest()[pri:0, instance:TestCases.CorporateWellnessTest@b59d31]" name="corporateWellnessTest" class="TestCases.CorporateWellnessTest"/>
+        <method signature="LowerMenuTest.BookDiagnosticTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookDiagnosticTest" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.BookfullbodyCheckups()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookfullbodyCheckups" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.searchforclinicTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforclinicTest" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.searchfordoctorsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchfordoctorsTest" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.searchforhospitalsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforhospitalsTest" class="TestCases.LowerMenuTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="17750" started-at="2021-03-27T16:41:30 IST" finished-at="2021-03-27T16:41:48 IST">
-      <class name="TestCases.CorporateWellnessTest">
-        <test-method status="PASS" signature="corporateWellnessTest()[pri:0, instance:TestCases.CorporateWellnessTest@b59d31]" name="corporateWellnessTest" duration-ms="17615" started-at="2021-03-27T16:41:30 IST" finished-at="2021-03-27T16:41:48 IST">
+    <test name="Default test" duration-ms="185466" started-at="2021-03-30T20:24:23 IST" finished-at="2021-03-30T20:27:29 IST">
+      <class name="TestCases.LowerMenuTest">
+        <test-method status="PASS" signature="BookDiagnosticTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookDiagnosticTest" duration-ms="31080" started-at="2021-03-30T20:24:24 IST" finished-at="2021-03-30T20:24:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- corporateWellnessTest -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.CorporateWellnessTest@b59d31]" name="flushReports" is-config="true" duration-ms="80" started-at="2021-03-27T16:41:48 IST" finished-at="2021-03-27T16:41:48 IST">
+        </test-method> <!-- BookDiagnosticTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="128" started-at="2021-03-30T20:24:55 IST" finished-at="2021-03-30T20:24:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-      </class> <!-- TestCases.CorporateWellnessTest -->
+        <test-method status="PASS" signature="BookfullbodyCheckups()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookfullbodyCheckups" duration-ms="28088" started-at="2021-03-30T20:24:55 IST" finished-at="2021-03-30T20:25:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookfullbodyCheckups -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="121" started-at="2021-03-30T20:25:23 IST" finished-at="2021-03-30T20:25:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="searchforclinicTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforclinicTest" duration-ms="56593" started-at="2021-03-30T20:25:23 IST" finished-at="2021-03-30T20:26:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchforclinicTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="115" started-at="2021-03-30T20:26:20 IST" finished-at="2021-03-30T20:26:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="searchfordoctorsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchfordoctorsTest" duration-ms="33709" started-at="2021-03-30T20:26:20 IST" finished-at="2021-03-30T20:26:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchfordoctorsTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="96" started-at="2021-03-30T20:26:53 IST" finished-at="2021-03-30T20:26:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="searchforhospitalsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforhospitalsTest" duration-ms="35351" started-at="2021-03-30T20:26:53 IST" finished-at="2021-03-30T20:27:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchforhospitalsTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="103" started-at="2021-03-30T20:27:29 IST" finished-at="2021-03-30T20:27:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.LowerMenuTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
