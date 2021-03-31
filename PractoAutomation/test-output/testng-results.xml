@@ -1,60 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="185466" started-at="2021-03-30T20:24:23 IST" finished-at="2021-03-30T20:27:29 IST">
+  <suite name="Alll tests in Test class Single run" duration-ms="460933" started-at="2021-03-31T12:42:21 IST" finished-at="2021-03-31T12:50:01 IST">
     <groups>
+      <group name="regression">
+        <method signature="TopMenuTest.consultButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="consultButtontest" class="TestCases.TopMenuTest"/>
+        <method signature="TopMenuTest.diagnosticsButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="diagnosticsButtontest" class="TestCases.TopMenuTest"/>
+        <method signature="TopMenuTest.doctorsButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="doctorsButtontest" class="TestCases.TopMenuTest"/>
+        <method signature="TopMenuTest.pharmacyButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="pharmacyButtontest" class="TestCases.TopMenuTest"/>
+      </group> <!-- regression -->
+      <group name="Regression">
+        <method signature="DiagnosticTest.topCitiesTest()[pri:0, instance:TestCases.DiagnosticTest@4ba2ca36]" name="topCitiesTest" class="TestCases.DiagnosticTest"/>
+      </group> <!-- Regression -->
       <group name="smoke">
-        <method signature="LowerMenuTest.BookDiagnosticTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookDiagnosticTest" class="TestCases.LowerMenuTest"/>
-        <method signature="LowerMenuTest.BookfullbodyCheckups()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookfullbodyCheckups" class="TestCases.LowerMenuTest"/>
-        <method signature="LowerMenuTest.searchforclinicTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforclinicTest" class="TestCases.LowerMenuTest"/>
-        <method signature="LowerMenuTest.searchfordoctorsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchfordoctorsTest" class="TestCases.LowerMenuTest"/>
-        <method signature="LowerMenuTest.searchforhospitalsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforhospitalsTest" class="TestCases.LowerMenuTest"/>
+        <method signature="CorporateWellnessTest.corporateWellnessTest()[pri:0, instance:TestCases.CorporateWellnessTest@23bb8443]" name="corporateWellnessTest" class="TestCases.CorporateWellnessTest"/>
+        <method signature="LogInTest.verifyLogInWithInvalidCredentials()[pri:0, instance:TestCases.LogInTest@1176dcec]" name="verifyLogInWithInvalidCredentials" class="TestCases.LogInTest"/>
+        <method signature="LogInTest.verifyLogInWithvalidCredentials()[pri:0, instance:TestCases.LogInTest@1176dcec]" name="verifyLogInWithvalidCredentials" class="TestCases.LogInTest"/>
+        <method signature="LowerMenuTest.BookDiagnosticTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="BookDiagnosticTest" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.BookfullbodyCheckups()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="BookfullbodyCheckups" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.searchforclinicTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="searchforclinicTest" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.searchfordoctorsTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="searchfordoctorsTest" class="TestCases.LowerMenuTest"/>
+        <method signature="LowerMenuTest.searchforhospitalsTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="searchforhospitalsTest" class="TestCases.LowerMenuTest"/>
+        <method signature="SearchHospitalTest.getHospitalsNmaes()[pri:0, instance:TestCases.SearchHospitalTest@120d6fe6]" name="getHospitalsNmaes" class="TestCases.SearchHospitalTest"/>
+        <method signature="TopMenuTest.homeButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="homeButtontest" class="TestCases.TopMenuTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="185466" started-at="2021-03-30T20:24:23 IST" finished-at="2021-03-30T20:27:29 IST">
+    <test name="All Test Suite" duration-ms="460933" started-at="2021-03-31T12:42:21 IST" finished-at="2021-03-31T12:50:01 IST">
       <class name="TestCases.LowerMenuTest">
-        <test-method status="PASS" signature="BookDiagnosticTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookDiagnosticTest" duration-ms="31080" started-at="2021-03-30T20:24:24 IST" finished-at="2021-03-30T20:24:55 IST">
+        <test-method status="PASS" signature="BookDiagnosticTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="BookDiagnosticTest" duration-ms="36134" started-at="2021-03-31T12:46:52 IST" finished-at="2021-03-31T12:47:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookDiagnosticTest -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="128" started-at="2021-03-30T20:24:55 IST" finished-at="2021-03-30T20:24:55 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="flushReports" is-config="true" duration-ms="62" started-at="2021-03-31T12:47:28 IST" finished-at="2021-03-31T12:47:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="BookfullbodyCheckups()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="BookfullbodyCheckups" duration-ms="28088" started-at="2021-03-30T20:24:55 IST" finished-at="2021-03-30T20:25:23 IST">
+        <test-method status="PASS" signature="BookfullbodyCheckups()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="BookfullbodyCheckups" duration-ms="37932" started-at="2021-03-31T12:47:28 IST" finished-at="2021-03-31T12:48:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookfullbodyCheckups -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="121" started-at="2021-03-30T20:25:23 IST" finished-at="2021-03-30T20:25:23 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="flushReports" is-config="true" duration-ms="97" started-at="2021-03-31T12:48:06 IST" finished-at="2021-03-31T12:48:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="searchforclinicTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforclinicTest" duration-ms="56593" started-at="2021-03-30T20:25:23 IST" finished-at="2021-03-30T20:26:20 IST">
+        <test-method status="PASS" signature="searchforclinicTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="searchforclinicTest" duration-ms="36899" started-at="2021-03-31T12:48:06 IST" finished-at="2021-03-31T12:48:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchforclinicTest -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="115" started-at="2021-03-30T20:26:20 IST" finished-at="2021-03-30T20:26:20 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="flushReports" is-config="true" duration-ms="105" started-at="2021-03-31T12:48:43 IST" finished-at="2021-03-31T12:48:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="searchfordoctorsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchfordoctorsTest" duration-ms="33709" started-at="2021-03-30T20:26:20 IST" finished-at="2021-03-30T20:26:53 IST">
+        <test-method status="PASS" signature="searchfordoctorsTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="searchfordoctorsTest" duration-ms="36411" started-at="2021-03-31T12:48:43 IST" finished-at="2021-03-31T12:49:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchfordoctorsTest -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="96" started-at="2021-03-30T20:26:53 IST" finished-at="2021-03-30T20:26:53 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="flushReports" is-config="true" duration-ms="34" started-at="2021-03-31T12:49:20 IST" finished-at="2021-03-31T12:49:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
-        <test-method status="PASS" signature="searchforhospitalsTest()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="searchforhospitalsTest" duration-ms="35351" started-at="2021-03-30T20:26:53 IST" finished-at="2021-03-30T20:27:29 IST">
+        <test-method status="PASS" signature="searchforhospitalsTest()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="searchforhospitalsTest" duration-ms="41624" started-at="2021-03-31T12:49:20 IST" finished-at="2021-03-31T12:50:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchforhospitalsTest -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@b59d31]" name="flushReports" is-config="true" duration-ms="103" started-at="2021-03-30T20:27:29 IST" finished-at="2021-03-30T20:27:29 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LowerMenuTest@1372ed45]" name="flushReports" is-config="true" duration-ms="82" started-at="2021-03-31T12:50:01 IST" finished-at="2021-03-31T12:50:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
       </class> <!-- TestCases.LowerMenuTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TestCases.CorporateWellnessTest">
+        <test-method status="PASS" signature="corporateWellnessTest()[pri:0, instance:TestCases.CorporateWellnessTest@23bb8443]" name="corporateWellnessTest" duration-ms="22335" started-at="2021-03-31T12:42:21 IST" finished-at="2021-03-31T12:42:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- corporateWellnessTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.CorporateWellnessTest@23bb8443]" name="flushReports" is-config="true" duration-ms="88" started-at="2021-03-31T12:42:43 IST" finished-at="2021-03-31T12:42:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.CorporateWellnessTest -->
+      <class name="TestCases.TopMenuTest">
+        <test-method status="PASS" signature="consultButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="consultButtontest" duration-ms="22062" started-at="2021-03-31T12:44:51 IST" finished-at="2021-03-31T12:45:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- consultButtontest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="flushReports" is-config="true" duration-ms="105" started-at="2021-03-31T12:45:13 IST" finished-at="2021-03-31T12:45:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="diagnosticsButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="diagnosticsButtontest" duration-ms="19229" started-at="2021-03-31T12:45:13 IST" finished-at="2021-03-31T12:45:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- diagnosticsButtontest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="flushReports" is-config="true" duration-ms="119" started-at="2021-03-31T12:45:32 IST" finished-at="2021-03-31T12:45:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="doctorsButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="doctorsButtontest" duration-ms="19354" started-at="2021-03-31T12:45:32 IST" finished-at="2021-03-31T12:45:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doctorsButtontest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="flushReports" is-config="true" duration-ms="112" started-at="2021-03-31T12:45:51 IST" finished-at="2021-03-31T12:45:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="homeButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="homeButtontest" duration-ms="17754" started-at="2021-03-31T12:45:52 IST" finished-at="2021-03-31T12:46:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeButtontest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="flushReports" is-config="true" duration-ms="45" started-at="2021-03-31T12:46:09 IST" finished-at="2021-03-31T12:46:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="pharmacyButtontest()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="pharmacyButtontest" duration-ms="42602" started-at="2021-03-31T12:46:09 IST" finished-at="2021-03-31T12:46:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pharmacyButtontest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.TopMenuTest@3444d69d]" name="flushReports" is-config="true" duration-ms="105" started-at="2021-03-31T12:46:52 IST" finished-at="2021-03-31T12:46:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.TopMenuTest -->
+      <class name="TestCases.SearchHospitalTest">
+        <test-method status="PASS" signature="getHospitalsNmaes()[pri:0, instance:TestCases.SearchHospitalTest@120d6fe6]" name="getHospitalsNmaes" duration-ms="45563" started-at="2021-03-31T12:43:29 IST" finished-at="2021-03-31T12:44:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHospitalsNmaes -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.SearchHospitalTest@120d6fe6]" name="flushReports" is-config="true" duration-ms="78" started-at="2021-03-31T12:44:15 IST" finished-at="2021-03-31T12:44:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.SearchHospitalTest -->
+      <class name="TestCases.DiagnosticTest">
+        <test-method status="PASS" signature="topCitiesTest()[pri:0, instance:TestCases.DiagnosticTest@4ba2ca36]" name="topCitiesTest" duration-ms="35326" started-at="2021-03-31T12:44:15 IST" finished-at="2021-03-31T12:44:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topCitiesTest -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.DiagnosticTest@4ba2ca36]" name="flushReports" is-config="true" duration-ms="111" started-at="2021-03-31T12:44:50 IST" finished-at="2021-03-31T12:44:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.DiagnosticTest -->
+      <class name="TestCases.LogInTest">
+        <test-method status="PASS" signature="verifyLogInWithInvalidCredentials()[pri:0, instance:TestCases.LogInTest@1176dcec]" name="verifyLogInWithInvalidCredentials" duration-ms="24436" started-at="2021-03-31T12:42:43 IST" finished-at="2021-03-31T12:43:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithInvalidCredentials -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LogInTest@1176dcec]" name="flushReports" is-config="true" duration-ms="90" started-at="2021-03-31T12:43:07 IST" finished-at="2021-03-31T12:43:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method status="PASS" signature="verifyLogInWithvalidCredentials()[pri:0, instance:TestCases.LogInTest@1176dcec]" name="verifyLogInWithvalidCredentials" duration-ms="21806" started-at="2021-03-31T12:43:08 IST" finished-at="2021-03-31T12:43:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogInWithvalidCredentials -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:TestCases.LogInTest@1176dcec]" name="flushReports" is-config="true" duration-ms="128" started-at="2021-03-31T12:43:29 IST" finished-at="2021-03-31T12:43:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.LogInTest -->
+    </test> <!-- All Test Suite -->
+  </suite> <!-- Alll tests in Test class Single run -->
 </testng-results>

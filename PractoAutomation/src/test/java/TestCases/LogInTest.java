@@ -17,7 +17,7 @@ public class LogInTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void verifyLogInWithvalidCredentials() throws InterruptedException {
-		System.out.println("Smoke Test");
+		System.out.println("Login with Valid credential Test");
 		logger = report.createTest("Login practo.com");
 
 		LandingPage landingPage = invokeLandingPage();
@@ -39,7 +39,7 @@ public class LogInTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void verifyLogInWithInvalidCredentials() {
-		System.out.println("Smoke Test");
+		System.out.println("Login with Invalid details Test");
 		try {
 			num1 = ExcelData.readExcel1("InputLogin");
 		} catch (Exception e) {

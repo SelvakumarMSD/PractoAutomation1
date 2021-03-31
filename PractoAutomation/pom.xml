@@ -29,7 +29,7 @@
                 <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng1.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                        
                     </suiteXmlFiles>
                 </configuration>

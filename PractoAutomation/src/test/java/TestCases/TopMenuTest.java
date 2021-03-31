@@ -13,7 +13,7 @@ public class TopMenuTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void homeButtontest() {
-		System.out.println("Smoke Test");
+		System.out.println("Home button Test");
 		logger = report.createTest("Click on practo icon");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage = landingPage.goToHomePage();
@@ -25,7 +25,7 @@ public class TopMenuTest extends BaseTestClass {
 
 	@Test(groups = "regression")
 	public void doctorsButtontest() {
-		System.out.println("Regression Test");
+		System.out.println("Doctors button test");
 		logger = report.createTest("Click on Doctor icon");
 		LandingPage landingPage = invokeLandingPage();
 		DoctorPage doctorpage = landingPage.goToDoctorPage();
@@ -36,7 +36,7 @@ public class TopMenuTest extends BaseTestClass {
 
 	@Test(groups = "regression")
 	public void consultButtontest() {
-		System.out.println("Regression Test");
+		System.out.println("Consult button test");
 		logger = report.createTest("Click on consult icon");
 		LandingPage landingPage = invokeLandingPage();
 		ConsultantPage consultPage = landingPage.goToConsultantPage();
@@ -47,7 +47,7 @@ public class TopMenuTest extends BaseTestClass {
 
 	@Test(groups = "regression")
 	public void pharmacyButtontest() {
-		System.out.println("Regression Test");
+		System.out.println("Pharmacy Button test");
 		logger = report.createTest("Click on pharmacy icon");
 		LandingPage landingPage = invokeLandingPage();
 		PharmacyPage pharmacyPage = landingPage.goToPharmacyPage();
@@ -59,7 +59,7 @@ public class TopMenuTest extends BaseTestClass {
 
 	@Test(groups = "regression")
 	public void diagnosticsButtontest() {
-		System.out.println("Regression Test");
+		System.out.println("DIagnostic button Test");
 		logger = report.createTest("Click on diagnostics icon");
 		LandingPage landingPage = invokeLandingPage();
 		DiagnosticsPage diagnosticsPage = landingPage.goToDiagnosticPage();

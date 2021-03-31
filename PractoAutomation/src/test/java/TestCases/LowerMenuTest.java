@@ -13,12 +13,12 @@ import baseClasses.BaseTestClass;
 public class LowerMenuTest extends BaseTestClass {
 	@Test(groups = { "smoke" })
 	public void searchfordoctorsTest() {
-		System.out.println("Smoke Test");
+		System.out.println("Search for doctor page test");
 		logger = report.createTest("search for doctor");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
 		PatientSearch patient = landingPage.searchfordoctors();
-		patient.getTitle("Best Doctors In Salem - Book Appointment Online, View Fees, Recommendations | Practo");
+		patient.getTitle("Best Doctors In Chennai - Book Appointment Online, View Fees, Recommendations | Practo");
 		patient.takeScreenShotOnFailure();
 		flushReports();
 
@@ -26,12 +26,12 @@ public class LowerMenuTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void searchforhospitalsTest() {
-		System.out.println("Smoke Test");
+		System.out.println("Search for hospitals test");
 		logger = report.createTest("search for hospitals");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
 		PatientSearch hospitalsSearch = landingPage.searchforhospitals();
-		hospitalsSearch.getTitle("Best Hospitals in Salem - Book Appointment Online, View Fees, Reviews | Practo");
+		hospitalsSearch.getTitle("Best Hospitals in Chennai - Book Appointment Online, View Fees, Reviews | Practo");
 		hospitalsSearch.takeScreenShotOnFailure();
 		flushReports();
 
@@ -39,12 +39,12 @@ public class LowerMenuTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void searchforclinicTest() {
-		System.out.println("Smoke Test");
+		System.out.println("Search for clinic Page Test");
 		logger = report.createTest("search for clinic");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
 		PatientSearch clinicSearch = landingPage.searchforclinic();
-		clinicSearch.getTitle("Best Clinics in Salem - Book Appointment, View Reviews, Address, Timings | Practo");
+		clinicSearch.getTitle("Best Clinics in Chennai - Book Appointment, View Reviews, Address, Timings | Practo");
 		clinicSearch.takeScreenShotOnFailure();
 		flushReports();
 
@@ -52,7 +52,7 @@ public class LowerMenuTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void BookDiagnosticTest() {
-		System.out.println("Smoke Test");
+		System.out.println("Search for Book Diagnostic Test");
 		logger = report.createTest("search for BookDiagnosticTest");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();
@@ -65,7 +65,7 @@ public class LowerMenuTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void BookfullbodyCheckups() {
-		System.out.println("Smoke Test");
+		System.out.println("Search for Bookfullbody Checkup Test");
 		logger = report.createTest("search for BookDiagnosticTest");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();

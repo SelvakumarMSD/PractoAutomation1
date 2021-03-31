@@ -10,7 +10,7 @@ public class CorporateWellnessTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void corporateWellnessTest() {
-		System.out.println("Smoke Test");
+		System.out.println("Fill details in corporate wellness page test");
 		logger = report.createTest(" Fill valid details in corporate wellness");
 		LandingPage landingPage = invokeLandingPage();
 		landingPage.scrollDown();

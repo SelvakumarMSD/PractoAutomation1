@@ -11,7 +11,7 @@ public class DiagnosticTest extends BaseTestClass {
 
 	@Test(groups = { "Regression" })
 	public void topCitiesTest() throws Exception {
-		System.out.println("Regression Test");
+		System.out.println("Get top cities test");
 		logger = report.createTest("Getting name of top cities from Diagnostics");
 		LandingPage landingPage = invokeLandingPage();
 		DiagnosticsPage diagnosticsPage = landingPage.goToDiagnosticPage();

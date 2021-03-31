@@ -12,7 +12,7 @@ public class SearchHospitalTest extends BaseTestClass {
 
 	@Test(groups = { "smoke" })
 	public void getHospitalsNmaes() throws Exception {
-		System.out.println("Smoke Test");
+		System.out.println("Bangalore Hospitals Test");
 		logger = report.createTest("Getting Hospitals name :");
 		LandingPage landingPage = invokeLandingPage();
 		context = ExcelData.getCity("InputLogin");
